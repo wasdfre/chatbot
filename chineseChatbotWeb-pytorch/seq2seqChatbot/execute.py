@@ -108,7 +108,7 @@ def train():
     #print(target_tensor)
     #print(input_tensor)
     max_data=gConfig['max_train_data_size']
-    while True:
+    for i in range(0,50000):
         start_time_epoch = time.time()
         total_loss = 0
         for i in range(0,max_data-1):
